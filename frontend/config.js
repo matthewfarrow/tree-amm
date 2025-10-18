@@ -13,9 +13,9 @@ const CONFIG = {
     
     // Contract Addresses - DEPLOYED ON FUJI TESTNET
     CONTRACTS: {
-        AMM: "0xe9FDbF7Ee526327b766Cb882Fc57610E4622f932", // ForestTreeAMM on Fuji
-        TOKEN_A: "0xd00ae08403B9bbb9124bB305C09058E32C39A48c", // WAVAX on Fuji
-        TOKEN_B: "0x8226EC2c1926c9162b6F815153d10018A7ccdf07"  //  WETH.e on Fuji
+        AMM: "0x483fE4F52BF57bc0aA83FdbF5eDee251334CAA14", // NEW AMM
+        TOKEN_A: "0xd00ae08403B9bbb9124bB305C09058E32C39A48c", // WAVAX
+        TOKEN_B: "0x8226EC2c1926c9162b6F815153d10018A7ccdf07"  // WETH.e
     },
     
     // Token Information
