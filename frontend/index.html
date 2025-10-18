@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🌲 Forest Tree AMM - Nature-Inspired DEX</title>
+    <title>🌲 Tree AMM</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -19,10 +19,12 @@
     <!-- Main container -->
     <div class="container">
         <header>
-            <h1>Forest Tree AMM</h1>
-            <p class="tagline">Where liquidity grows like ancient trees</p>
-            <button id="connectWallet" class="btn btn-primary">Connect Wallet</button>
-            <p id="walletAddress" class="wallet-info"></p>
+            <h1>🌲 Tree AMM</h1>
+            <div class="wallet-controls">
+                <button id="connectWallet" class="btn btn-primary">Connect Wallet</button>
+                <button id="disconnectWallet" class="btn btn-secondary" style="display:none;">Disconnect</button>
+                <p id="walletAddress" class="wallet-info"></p>
+            </div>
         </header>
 
         <!-- Tab Navigation -->
@@ -166,9 +168,8 @@
         <div id="toast" class="toast hidden"></div>
     </div>
 
-    <footer>
-        <p>⚠️ This contract is not audited. Use at your own risk.</p>
-        <p>🌲 Forest Tree AMM</p>
+        <footer>
+        <p>⚠️ Not audited. Use at your own risk.</p>
     </footer>
 
     <!-- Load ethers.js locally (no CDN dependency) -->

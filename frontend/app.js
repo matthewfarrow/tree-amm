@@ -29,6 +29,8 @@ function setupEventListeners() {
 
     // Wallet connection
     document.getElementById('connectWallet').addEventListener('click', connectWallet);
+    document.getElementById('disconnectWallet').addEventListener('click', disconnectWallet);
+
 
     // Swap
     document.getElementById('swapAmountIn').addEventListener('input', calculateSwapOutput);
@@ -117,6 +119,8 @@ async function connectWallet() {
         document.getElementById('connectWallet').textContent = '✅ Connected';
         document.getElementById('connectWallet').disabled = true;
         document.getElementById('connectWallet').classList.add('connected');
+        document.getElementById('connectWallet').style.display = 'none';
+        document.getElementById('disconnectWallet').style.display = 'inline-block';
         document.getElementById('walletAddress').textContent = `${userAddress.slice(0, 6)}...${userAddress.slice(-4)}`;
 
         // Load initial data
@@ -144,6 +148,26 @@ async function connectWallet() {
         showToast(errorMessage, 'error');
         hideLoading();
     }
+}
+
+//Disconnect wallet
+function disconnectWallet() {
+    //Clear state
+    provider = null;
+    signer = null;
+    ammContract = null;
+    tokenAContract = null;
+    tokenBContract = null;
+    userAddress = null;
+
+    //Reset UI
+    document.getElementById('connectWallet'.textContent = 'Connect Wallet')
+    document.getElementById('connectWallet').disabled = false;
+    document.getElementById('connectWallet').classList.remove('connected');
+    document.getElementById('connectWallet').style.display = 'inline-block';
+    document.getElementById('walletAddress').textContext = '';
+
+    showToast('Wallet disconnected', 'sucess')
 }
 
 // Switch to Avalanche network
