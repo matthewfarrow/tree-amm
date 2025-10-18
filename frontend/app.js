@@ -152,7 +152,7 @@ async function connectWallet() {
 
 //Disconnect wallet
 function disconnectWallet() {
-    //Clear state
+    // Clear state
     provider = null;
     signer = null;
     ammContract = null;
@@ -160,14 +160,15 @@ function disconnectWallet() {
     tokenBContract = null;
     userAddress = null;
 
-    //Reset UI
-    document.getElementById('connectWallet'.textContent = 'Connect Wallet')
+    // Reset UI
+    document.getElementById('connectWallet').textContent = 'Connect Wallet';
     document.getElementById('connectWallet').disabled = false;
     document.getElementById('connectWallet').classList.remove('connected');
     document.getElementById('connectWallet').style.display = 'inline-block';
-    document.getElementById('walletAddress').textContext = '';
+    document.getElementById('disconnectWallet').style.display = 'none';
+    document.getElementById('walletAddress').textContent = '';
 
-    showToast('Wallet disconnected', 'sucess')
+    showToast('Wallet disconnected', 'success');
 }
 
 // Switch to Avalanche network
