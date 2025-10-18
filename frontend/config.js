@@ -14,20 +14,20 @@ const CONFIG = {
     // Contract Addresses - DEPLOYED ON FUJI TESTNET
     CONTRACTS: {
         AMM: "0xe9FDbF7Ee526327b766Cb882Fc57610E4622f932", // ForestTreeAMM on Fuji
-        TOKEN_A: "0x170b0d27838ab234e82241C9c330ec273497a2A3", // Oak Token (Test)
-        TOKEN_B: "0x0C7be5406d451E84BF4EBDdcA889d017F4355e4D"  // Pine Token (Test)
+        TOKEN_A: "0xd00ae08403B9bbb9124bB305C09058E32C39A48c", // WAVAX on Fuji
+        TOKEN_B: "0x8226EC2c1926c9162b6F815153d10018A7ccdf07"  //  WETH.e on Fuji
     },
     
     // Token Information
     TOKENS: {
         TOKEN_A: {
-            symbol: "OAK",
-            name: "Oak Token",
+            symbol: "WAVAX",
+            name: "Wrapped AVAX",
             decimals: 18
         },
         TOKEN_B: {
-            symbol: "PINE",
-            name: "Pine Token",
+            symbol: "WETH.e",
+            name: "Wrapped Ether",
             decimals: 18
         }
     },

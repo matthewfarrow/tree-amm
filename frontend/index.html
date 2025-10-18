@@ -44,8 +44,8 @@
                     <div class="input-group">
                         <input type="number" id="swapAmountIn" placeholder="0.0" step="0.01">
                         <select id="swapTokenIn">
-                            <option value="tokenA">Token A (Oak)</option>
-                            <option value="tokenB">Token B (Pine)</option>
+                            <option value="tokenA">Token A (WAVAX)</option>
+                            <option value="tokenB">Token B (WETH.e)</option>
                         </select>
                     </div>
                     <p class="balance">Balance: <span id="swapBalanceIn">0.0</span></p>
@@ -58,8 +58,8 @@
                     <div class="input-group">
                         <input type="number" id="swapAmountOut" placeholder="0.0" readonly>
                         <select id="swapTokenOut">
-                            <option value="tokenB">Token B (Pine)</option>
-                            <option value="tokenA">Token A (Oak)</option>
+                            <option value="tokenB">Token B (WETH.e)</option>
+                            <option value="tokenA">Token A (WAVAX)</option>
                         </select>
                     </div>
                     <p class="balance">Balance: <span id="swapBalanceOut">0.0</span></p>
@@ -79,7 +79,7 @@
             <div class="card">
                 <h2>Add Liquidity</h2>
                 <div class="form-group">
-                    <label>Token A (Oak) Amount</label>
+                    <label>Token A (WAVAX) Amount</label>
                     <input type="number" id="liquidityAmountA" placeholder="0.0" step="0.01">
                     <p class="balance">Balance: <span id="balanceA">0.0</span></p>
                 </div>
@@ -87,7 +87,7 @@
                 <div class="plus-icon">➕</div>
 
                 <div class="form-group">
-                    <label>Token B (Pine) Amount</label>
+                    <label>Token B (WETHE.e) Amount</label>
                     <input type="number" id="liquidityAmountB" placeholder="0.0" step="0.01">
                     <p class="balance">Balance: <span id="balanceB">0.0</span></p>
                 </div>
@@ -116,8 +116,8 @@
 
                 <div class="removal-preview">
                     <h3>You will receive:</h3>
-                    <p>Token A (Oak): <span id="receiveA">0.0</span></p>
-                    <p>Token B (Pine): <span id="receiveB">0.0</span></p>
+                    <p>Token A (WAVAX): <span id="receiveA">0.0</span></p>
+                    <p>Token B (WETH.e): <span id="receiveB">0.0</span></p>
                 </div>
 
                 <button id="removeLiquidity" class="btn btn-danger">Harvest Liquidity 🍂</button>
@@ -130,11 +130,11 @@
                 <h2>Pool Information</h2>
                 <div class="stats-grid">
                     <div class="stat-box">
-                        <h3>Reserve A (Oak)</h3>
+                        <h3>Reserve A (WAVAX)</h3>
                         <p id="reserveA">0.0</p>
                     </div>
                     <div class="stat-box">
-                        <h3>Reserve B (Pine)</h3>
+                        <h3>Reserve B (WETH.e)</h3>
                         <p id="reserveB">0.0</p>
                     </div>
                     <div class="stat-box">
